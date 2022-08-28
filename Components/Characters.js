@@ -16,7 +16,7 @@ function Characters({characters}) {
     <div className='mx-8  border border-solid border-gray-100 rounded-xl shadow-xl font-Roboto'>
 
     <table className='flex flex-col p-6 '>
-
+      <tbody>
        <tr className='flex justify-around bg-gris text-white px-4 py-3 rounded-t-lg mb-4'>
          <th >Nombre</th>
          <th >Vivo</th>
@@ -27,8 +27,7 @@ function Characters({characters}) {
          <th >Capitulos</th>
          <th >Fecha</th>
          <th >Acciones</th>
-       </tr>
-       
+       </tr>       
        {
         characters.map((item, index)=>(
         <tr key={index} className='flex justify-around text-sm px-4 py-3 text-header items-center'>
@@ -58,7 +57,7 @@ function Characters({characters}) {
        </tr>            
         ))
        }
-       
+       </tbody>
     </table>        
     </div>
   )
